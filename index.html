@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Esteban Astudillo">
+        <meta name="description" content="Mon site web de vente pokemon">
+        <title>Tp Final 1W1 -- Esteban Astudillo</title>
+        <link href="fonts/PokemonHollow.ttf" rel="stylesheet">
+        <link href="fonts/PokemonSolid.ttf" rel="stylesheet">
+        <link href="fonts/OrangeKid.ttf" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">  
+           
+    </head>
+    <body>
+    
+        <header>
+            <nav>
+                <div id="menu">
+                    <div id="menuBurger">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div>
+                  <div id="items" >           
+                  <ul>
+                    <li><a href="#TitreAccueil">Accueil</a></li>
+                    <li><a href="#TitreConcours">Concours</a></li>
+                    <li><a href="#TitreHoraire">Horaire</a></li>
+                    <li><a href="#TitreDescription">Qui sommes-nous?</a></li>
+                    <li><a href="#TitreGalerie">Boutique</a></li>
+                    <li><a href="#TitreVideo">"Review" de clients</a></li>
+                    <li><a href="#TitreFooter">NosInfos</a></li>
+                </ul> 
+                  </div>
+                  </div>               
+            </nav>
+         
+        </header>
+        <main>   
+            <h5 id="TitreAccueil">Accueil</h5>
+            <div id="Accueil">
+            <h1>Cartes en folie !</h1>
+            <h1>Travail pratique Partie 2</h1>
+            <h2>582-1W1 - Mise en Page Web</h2>
+            <h3>Techniques d'intégration multimedia</h3>
+            <h3>Collège de maisonneuve</h3>
+            <h4>Automne 2022</h4>
+            </div>
+            <h5 id="TitreConcours">Concours</h5>
+            <div id="Inscription">
+                <img id="imageConcours" src="images/imageConcours.jpg" alt="grosse image fakemon">
+                <form >
+                    <fieldset>
+                        <legend>Inscrivez vous ici pour courir la chance de gagner la carte de fake MGarchomp GX d'une valeur de 1 bitcoin !</legend>
+                        <fieldset id="colonne">
+                            <label>Nom : <input type="text" required></label>
+                            <label>Prénom : <input type="text" required></label>
+                            <label>Courriel :<input type="email" required></label>
+                            <label>Âge : <input type="number" min="0" max="125" required></label>
+                        </fieldset>       
+                        <fieldset id="boutons">
+                            <input type="reset" value="Vider">
+                            <input type="submit" value="Envoyer">
+                        </fieldset>
+                    </fieldset>
+                </form>
+            </div>
+            <h5 id="TitreHoraire">Horaire</h5>
+            <div id="Horaire">
+            <table class="tableau">
+                <caption>
+                    Nos heures d'ouverture en magasin
+                </caption>
+                <thead>
+                    <tr>
+                       <th>Heure:</th>
+                       <th scope="col">Lundi</th>
+                       <th scope="col">Mardi</th>
+                       <th scope="col">Mercredi</th>
+                       <th scope="col">Jeudi</th>
+                       <th scope="col">Vendredi</th>
+                       <th scope="col">Samedi</th>
+                       <th scope="col">Dimanche</th>
+                    </tr>
+                </thead>				
+                <tbody>
+                   <tr>
+                      <th scope="row">9h00</th>
+                      <td class="Ouvert" rowspan="9">Ouvert</td>
+                      <td class="Ouvert" rowspan="9">Ouvert</td>
+                      <td class="Ouvert" rowspan="9">Ouvert</td>
+                      <td class="Ouvert" rowspan="9">Ouvert</td>
+                      <td class="Ouvert" rowspan="9">Ouvert</td>
+                      <td class="Ouvert" rowspan="13">Ouvert</td>
+                      <td class="Ouvert" rowspan="13">Ouvert</td>
+                   </tr>
+                   <tr>
+                      <th scope="row">10h00</th>
+                    </tr>
+                   <tr>
+                      <th scope="row">11h00</th>
+                   </tr>
+                   <tr>
+                      <th scope="row">12h00</th>                           
+                   </tr>
+                   <tr>
+                      <th scope="row">13h00</th>                      
+                   </tr>
+                   <tr>
+                      <th scope="row">14h00</th>                 
+                     </tr>
+                   <tr>
+                      <th scope="row">15h00</th>               
+                    </tr>	
+                   <tr>
+                      <th scope="row">16h00</th>                  
+                   <tr>
+                      <th scope="row">17h00</th>                     
+                    </tr>
+                   <tr>
+                      <th scope="row">18h00</th>
+                      <td class="Fermé" rowspan="4">Fermé</td>
+                      <td class="Fermé" rowspan="4">Fermé</td>
+                      <td class="Fermé" rowspan="4">Fermé</td>
+                      <td class="Fermé" rowspan="4">Fermé</td>
+                      <td class="Fermé" rowspan="4">Fermé</td>
+                   </tr>
+                   <tr>
+                    <th scope="row">19h00</th>
+                 </tr>
+                 <tr>
+                    <th scope="row">20h00</th>                  
+                 </tr>
+                 <tr>
+                    <th scope="row">21h00</th>                  
+                 </tr>
+                </tbody>
+                    <tfoot>
+                    <tr>
+                        <td colspan ="8">Les heures peuvent varier pendant les jours fériés</td>
+                     </tr>
+                    </tfoot>
+            </table>
+                </div>
+                <h5 id="TitreDescription">Description</h5>
+                    <div id="DescriptionMagasin">
+                        <article>
+                            <h2>C'est quoi notre magasin?</h2>
+                             <p>Carte en folie est un lieu magique situé au coeur de la ville. Il est connu pour sa large sélection de cartes rares et exotiques, allant des cartes de magie aux cartes de stratégie en passant par les cartes de collection.
+    
+                            Notre magasin est tenu par un groupe  de collectionneurs passionnés, qui sont toujours prêts à partager leurs connaissances sur les différentes cartes et à aider les clients à trouver la carte qu'ils cherchent.
+                           
+                            Il est divisé en plusieurs sections, chacune consacrée à un type de carte spécifique. On y trouve ainsi une section dédiée aux cartes de magie, une autre aux cartes de stratégie, et une autre encore aux cartes de collection.
+                           </p>
+                            <figure id ="fig1">
+                               <div id="petiteImage"><img id="image1" src="images/imageMagasin1.jpg" alt="https://boutique-collect-edition.business.site/"></div>
+                                   <img id="image2" src="images/imageMagasin2.jpeg" alt="https://boutique-collect-edition.business.site/">
+                           </figure>
+                           <p>
+                           Notre magasin est également un lieu de rassemblement pour les amateurs de cartes de tous âges. On y organise régulièrement des tournois et des événements spéciaux, où les joueurs peuvent se mesurer les uns aux autres et échanger leurs cartes.
+                          
+                           En bref, celui-ci est l'endroit idéal pour les amateurs de cartes de tous niveaux, qu'ils soient débutants ou experts. C'est un lieu de passion et de découverte, où chacun peut trouver la carte qui lui correspond.</p>
+                        </article>
+                        <article>
+                            <h2>C'est quoi des cartes a collectionner?</h2>
+                            <p>Les cartes à jouer à collectionner sont des cartes spéciales qui sont créées pour être échangées ou vendues entre les joueurs. Elles sont souvent utilisées dans les jeux de stratégie et de rôle, et ont gagné en popularité ces dernières années avec l'explosion des jeux en ligne.
+    
+                            Les cartes à collectionner peuvent être classées en plusieurs catégories en fonction de leur rareté, de leur valeur et de leur beauté. Certaines sont très rares et peuvent être très coûteuses, tandis que d'autres sont plus courantes et moins chères.
+                            
+                            Les collectionneurs de cartes aiment à les collectionner pour leur beauté et leur rareté, et ils peuvent passer beaucoup de temps à chercher les cartes qu'ils veulent ajouter à leur collection. Ils peuvent également participer à des événements de collection de cartes où ils peuvent échanger ou vendre leurs cartes avec d'autres collectionneurs.
+                            
+                            Il y a aussi de nombreux jeux de cartes à collectionner disponibles en ligne, où les joueurs peuvent acheter des packs de cartes ou participer à des tournois pour essayer de gagner de nouvelles cartes.
+                            
+                            En général, les cartes à collectionner peuvent être une passion amusante et divertissante pour les joueurs de tous âges. Si vous êtes intéressé par la collection de cartes, il y a de nombreuses options et ressources disponibles pour vous aider à débuter et à développer votre collection.</p>
+                        <img id="image3" src="images/imageMagasin3.jpg" alt="unMagasin3"></article>
+                    </div>
+                   
+               
+                <h5 id="TitreGalerie">Boutique</h5>
+            <div id="Galerie">
+                
+                   <figure class="container"> <img class="image" src="images/image1.jpg" alt="Image de fakemon tyranitar">
+              
+                    <figcaption >Carte Tyranitar
+                    </figcaption>
+                    <h3 class="prix">Prix : 0.1 btc</h3>
+               
+                </figure>
+            <figure class="container">    
+                    <img class="image" src="images/image2.jpg" alt="Image de fakemon charizard">              
+               
+                    <figcaption >Carte Charizard 
+                    </figcaption>
+                    <h3><i>(limited edition)</i></h3>
+                    <h3 class="prix">Prix : 0.5 btc</h3>
+          
+                </figure>
+            <figure class="container">
+                    <img class="image" src="images/image3.jpg" alt="Image de fakemon mauve">
+                    <figcaption >Carte Purple Laser
+                    </figcaption>
+                    <h3 class="prix">Prix : 0.25 btc</h3>
+           
+                </figure>
+            <figure class="container">
+                    <img class="image" src="images/image4.jpg" alt="Image de fakemon ghost">             
+                    <figcaption >Carte Ghost
+                    </figcaption>
+                    <h3 class="prix">Prix : 0.495 btc</h3> 
+                </figure>
+        </div>
+            <div id="Galerie2">
+            <figure class="container"> <img class="image" src="images/image5.jpg" alt="Image de fakemon tyranitar">
+              
+                <figcaption >Carte Draculeech
+                </figcaption>
+                <h3 class="prix">Prix : 0.99 btc</h3>
+           
+            </figure>
+        <figure class="container">    
+                <img class="image" src="images/image6.png" alt="Image de fakemon charizard">              
+           
+                <figcaption >Carte White Alien
+                </figcaption>
+                <h3><i>(japan edition)</i></h3>
+                <h3 class="prix">Prix : 0.79 btc</h3>
+      
+            </figure>
+        <figure class="container">
+                <img class="image" src="images/image7.jpg" alt="Image de fakemon mauve">
+                <figcaption >Carte Demeon
+                </figcaption>
+                <h3 class="prix">Prix : 0.6 btc</h3>
+            </figure>
+        <figure class="container">
+                <img class="image" src="images/image8.jpg" alt="Image de fakemon ghost">             
+                <figcaption >Carte Toratrop
+                </figcaption>
+                <h3 class="prix">Prix : 0.99 btc</h3> 
+            </figure>
+    </div>
+    <div id="Galerie3">
+        <figure class="container"> <img class="image" src="images/image9.jpg" alt="Image de fakemon tyranitar">
+          
+            <figcaption >Carte Speceter EX
+            </figcaption>
+            <h3 class="prix">Prix : 0.155 btc</h3>
+       
+        </figure>
+    <figure class="container">    
+            <img class="image" src="images/image10.jpg" alt="Image de fakemon charizard">              
+       
+            <figcaption >Carte Mr.Maui
+            </figcaption>
+            <h3 class="prix">Prix : 0.05 btc</h3>
+        </figure>
+    <figure class="container">
+            <img class="image" src="images/image11.jpg" alt="Image de fakemon mauve">
+            <figcaption >Carte Mewdarkza
+            </figcaption>
+            <h3 class="prix">Prix : 0.3 btc</h3>
+   
+        </figure>
+    <figure class="container">
+            <img class="image" src="images/image12.png" alt="Image de fakemon ghost">             
+            <figcaption >Carte Mewtri Ex
+            </figcaption>
+            <h3 class="prix">Prix : 0.555 btc</h3> 
+    </figure>
+    </div>
+            <h5 id="TitreVideo">Video</h5>
+            <div id="client"><h2>Nos clients satisfaits</h2></div>
+            <div id="Video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rmmWw11pEzg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qso2TTm3BIY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ckqd10DWgoA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            <div id="Video2">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/i8lmQ5Ls6bw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5KC7Dkpke-A" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GcXgE3mCdHg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+            
+        </main>
+        <footer>
+            <h5 id="TitreFooter">Footer</h5>
+            <div id="AccueilFooter"> <h1>Cartes en folie !</h1>
+                <h1>Travail pratique Partie 2</h1>
+                <h2>582-1W1 - Mise en Page Web</h2>
+                <h3>Techniques d'intégration multimedia</h3>
+                <h3>Collège de maisonneuve</h3>
+                <h4>Automne 2022</h4>
+                <h2>Descritption du departement Tim</h2>
+                <p>Ce programme vous offre une immersion dans le monde du jeu 2D/3D, du Web, des technologies mobiles et des médias numériques, tout en apprenant différents langages de programmation</p></div>
+                <div id="Description">
+                   
+                </div>
+                <div id="ContactezNous">
+                    <h1>Pour nous contactez :</h1>
+                    <h2>Email:cartesenfolies@gmail.com</h2>
+                    <h2>Telephone:450-3CARTES</h2>
+                    <h2>945 Rue Des Arnaques</h2>
+                </div>
+                <div id="Avis">
+                    <h2>*AVIS ! : Ceci n'est pas un veritable site de vente de cartes,c'est un site construit dans le cadre d'un cours de programmation*</h2>
+                    <h4>Credit pour image de fond: @ThePokemonCompany</h4>
+                    <h4>Crédit pour les images de cartes: @EmilyPurdy sur Pinterest</h4>
+                    <h4>Crédit pour les images de magasin :@boutique-collect-edition.business</h4>
+                    <h4>Texte généré par l'IA</h4>
+                    <div id="Logos">
+                    <img src="images/facebook_32.png" alt="logoFb">
+                    <img src="images/youtube_32.png" alt="logoYt">
+                    <img src="images/instagram_32.png" alt="logoIg">
+                    <img src="images/tiktoklogo.png" alt="logoTiktok">
+                    </div>
+                    <div id="Notice"><h5>Avis de confidentialité | Privacy Notice</h5></div>
+                   
+                </div>
+        </footer>
+        <script>
+        
+    // Fonction pour faire apparaitre le menu burger lorsque l'on clique dessus //
+    
+      var menuBurger = document.getElementById("menuBurger");
+      var items = document.getElementById("items");
+    
+      menuBurger.addEventListener("click", function() {
+        // si le menu est cache on le montre
+        if (items.style.display === "none") {
+          items.style.display = "block";
+        // si le menu est present, on le cache
+        } else {
+          items.style.display = "none";
+        }
+      });
+    
+      // Fonction pour appliquer sticky au nav //
+      
+      window.onscroll = function() {myFunction()};
+
+      var menu = document.getElementById("menu");
+      var sticky = menu.offsetTop;
+
+      function myFunction() {
+      if (window.pageYOffset >= sticky) {
+      menu.classList.add("sticky")
+      } 
+}
+
+    // Function pour changer la border de l'image concours a chaque secondes //
+    setInterval(function() {
+    const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+    const currentColor = element.style.borderColor;
+    let index = colors.indexOf(currentColor);
+
+    if (index === -1 || index === colors.length - 1) {
+        index = 0;
+    } else {
+        index += 1;
+    }
+
+    element.style.borderColor = colors[index];
+    }, 1000);
+
+    const element = document.getElementById('imageConcours');
+   
+    //  Function pour changer la taille de l'image a chaque seconde //
+
+    let size = 400; // la taille des pixels de base
+    let grow = true; //  flag pour determiner si la taille doit etre incrementer ou non
+
+     let intervalTaille =setInterval(function () {
+    if (grow) {
+        size += 200;
+    } else {
+        size -= 200;
+    }
+
+    // change la taille de l'image
+    element.style.width = size + 'px';
+    element.style.height = size + 'px';
+
+    // changer l'animation quand l'image atteint 600px et vice-versa
+    if (size >= 600) {
+        grow = false;
+    } else if (size <= 400) {
+        grow = true;
+    }
+    }, 1000);
+
+    // After 10 seconds, stop the interval
+    setTimeout(function() {
+    clearInterval(intervalTaille);
+    }, 10000);
+    </script>
+                
+    </body>  
+    
+</html>
