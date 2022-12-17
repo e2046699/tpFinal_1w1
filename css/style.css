@@ -1,0 +1,501 @@
+*{
+	margin: 0;
+	padding: 0; 
+}
+
+@font-face {
+    font-family: "PokemonHollow";
+    src: url("../fonts/PokemonHollow.ttf");
+}
+@font-face{  
+    font-family: "PokemonSolid";
+    src: url("../fonts/PokemonSolid.ttf");
+}
+
+@font-face {
+    font-family: "OrangeKid";
+    src: url("../fonts/OrangeKid.ttf");
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'OrangeKid';
+    font-size: 20px;       
+    background-image: url("../images/background2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;      
+}
+
+/*******************Les conteneurs principals*******************/
+
+header{
+    display: flex;
+}
+
+main{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-grow: 1;
+}
+
+footer{
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    background: rgb(254,153,1);
+    background: linear-gradient(0deg, rgba(254,153,1,1) 9%, rgba(254,198,0,1) 100%);   
+}
+
+footer h1{
+    margin: 0;
+}
+
+/* Les titres transparents des conteneurs*/
+
+#TitreGalerie,#TitreDescription{
+    position: relative;
+    bottom: 300px;
+    left: 375px;
+    margin: 0 auto;
+    color:transparent
+}
+
+#TitreHoraire,#TitreVideo, #TitreFooter, #TitreConcours,#TitreAccueil{
+    position: relative;
+    bottom: 100px;
+    left: 375px;
+    margin: 0 auto;
+    color: transparent;
+}
+
+
+
+/******************Les conteneurs dans HEADER*******************/
+
+nav{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    height: 10vh;
+    margin: 0 auto;   
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    height: 6vh;
+    align-items: center; 
+}
+
+/* Menu burger */
+
+#menuBurger {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer; 
+}
+
+
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 5px;
+    background-color: #333;
+    border-radius: 10px;
+}
+  
+/* Contenu liste */
+
+ul{
+    list-style: none;
+    display: flex;
+    width: 100vw;
+}
+
+li{
+    margin: 0 auto;
+}
+
+/* Le texte */
+
+a:hover{
+    animation: color 4s infinite ;
+}
+
+ li>a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    font-family: "PokemonSolid";
+    border: solid 5px transparent;
+    border-radius: 30px 30px 30px 30px;
+    animation: border-animation 5s linear infinite;
+  }
+  
+
+/* Les animations */
+
+@keyframes border-animation {
+    0% {border-top-color: blue;}
+    25% {border-right-color: blue;}
+    50% {border-bottom-color: blue;}
+    75% {border-left-color: blue;}
+    100% {border-top-color: blue;}
+}
+
+@keyframes color{
+    0%{
+        color: rgb(16, 16, 173);
+    }
+    50%{
+        color: #08a38e;
+    }
+    100%{
+        color: rgb(16, 16, 173);
+    }
+        
+}
+
+/******************Les conteneurs dans Main*******************/
+
+/******************Le contenu Accueil******************/  
+  
+#Accueil{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+    margin-bottom: 650px;
+}
+  
+#Accueil h1{
+    font-family: "PokemonHollow";
+}
+
+#Accueil h1,#Accueil h2, #Accueil h3, #Accueil h4{
+    margin-bottom: 75px;
+}
+  
+/******************Le contenu Inscription******************/  
+
+#Inscription{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 800px;
+    flex-direction: column;
+}
+
+/*image concours */
+
+#imageConcours{
+    border-radius: 30px 30px 30px 30px;
+    height: 400px;
+    width: 400px;
+    border: 10px solid blue;
+    box-shadow: 10px 10px 10px 5px #2c2b2b;
+    margin-bottom: 100px;
+    z-index: 0;
+}
+
+
+form{
+    width: 1000px;
+}
+
+#boutons{
+    font-size: 20px;
+    text-align: center;
+    font-family: "OrangeKid";
+    
+}
+
+#colonne {
+	padding: 3%;
+    flex: 1 0 30%;
+}
+
+/******************Le contenu Horaire******************/ 
+
+#Horaire{
+    display: flex;
+    font-family: "OrangeKid";
+    margin: 0 auto;
+    width: 100vw;
+    justify-content: center;
+    margin-bottom: 800px;   
+}
+
+caption{
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    list-style: none;  
+}
+
+.tableau{
+    border : 1px solid  #333;
+    width: 1200px;
+    border-collapse: collapse;  
+    color: rgb(54, 9, 96); 
+}	
+
+th, td{
+    border : 1px solid  #333;
+    width: 150px;
+    text-align: center;
+}
+
+th{
+    border: solid 1px black;
+    height: 50px ;
+    font-size: 25px;
+}
+
+tfoot {
+    height: 30px;
+}
+
+.Fermé{
+    background: rgb(131,58,180);
+    background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.Ouvert{
+    background: rgb(34,193,195);
+    background: radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+/******************Le contenu Section******************/ 
+
+#DescriptionMagasin{
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 600px;
+    font-size: 30px;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: flex-start;
+}
+
+article{
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+    flex-wrap: wrap;
+    margin-left: 15px;
+}
+#TitreSection {
+   display: flex;
+   width: 100%;
+   margin: 0 auto;
+   justify-content: center;
+}
+
+
+#fig1{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#image1{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 0;
+    border-radius: 30px 30px 30px 30px;
+    border: 5px solid blue;
+}
+
+#fig1:hover> #image2{
+    opacity: 1;
+}
+
+#image2,#image3 {
+    width: 600px;
+    height: 400px;
+    border-radius: 30px 30px 30px 30px;
+    border: 5px solid blue;
+}
+
+#image2{
+    transition:0.5s all ease;
+    opacity: 0;
+}
+#image3{
+    margin: 0 auto;
+}
+/******************Le contenu Galerie******************/ 
+
+#Galerie, #Galerie2, #Galerie3{
+    display: flex; 
+    width: 100vw;
+    justify-content: space-around;
+}
+
+#Galerie3{
+    margin-bottom: 800px;
+}
+
+.image{
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px 30px 30px 30px;
+    border: 5px solid blue;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 10px 5px #2c2b2b;
+    width: 200px;
+    height: 200px;
+    transition: transform 0.5s;
+}
+
+
+.container {
+    position: relative;
+}
+
+.container:hover img {
+    transform: scale(1.5);
+}
+
+figcaption {
+    color: white;
+    font-size: clamp(1rem, 2vw, 2rem); 
+    text-align: center;
+    font-family: "PokemonSolid";
+    color: blue;
+    letter-spacing: 2px;
+    padding: 2px;
+}
+
+.prix{
+    font-weight: bold;
+    font-family: "OrangeKid";
+    color:rgb(65, 133, 10);
+}
+
+figure{
+    text-align: center;
+}
+
+figure h3{
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+/******************Le contenu Video******************/ 
+
+#client{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+#Video{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 200px;
+}
+
+iframe{
+    border-radius: 30px 30px 30px 30px;
+    border: 5px solid blue;
+    box-shadow: 10px 10px 10px 5px #2c2b2b;
+    width: 30%;
+
+}
+
+#Video2{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 800px;  
+}
+
+/******************Le contenu NosInfos******************/ 
+
+#AccueilFooter{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin-left:  5px ;
+    justify-content: space-around; 
+}
+
+#Descritption{
+    display: flex;
+    flex-direction: row;
+    width: 50px;
+    justify-content: space-around;
+    height: 100%;
+}
+
+
+#Description h2, #Description p{
+    justify-content: center;
+    display: flex;
+    margin-top: 100px;
+   
+}
+
+#ContactezNous{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Avis{
+    display: flex;
+    width: 33%;
+    flex-direction: column;
+}
+
+#Avis img{
+    width: 50px;
+    height: 50px;
+}
+
+#Logos{
+    display: flex;
+    margin-top: 80px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#Notice{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
